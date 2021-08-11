@@ -16,6 +16,10 @@ list-style: none;
         {
           padding-inline-start: 0;
         }
+        .red-star{
+            color: red;
+        }
+        
     </style>
 </head>
 
@@ -33,6 +37,34 @@ list-style: none;
     <hr>
     Phone: <a href="tel:1234567890">1234567890</a><br>
     Email: <a href="mailto:Khushabu@gmail.com">Khushabu@gmail.com</a>
+
+    <h2>Drop a message</h2>
+<p>Please drop us a message by filling out this form, we will get back to you within 2 working dys</p>
+<p>Fields marked with * are required <span class="red-star">*</span></p> 
+<label for="name">Your name <span class="red-star">*</span></label><br><br>
+<input type="text" name="name" id=""><br><br>
+<label for="email">Your email <span class="red-star">*</span></label><br><br>
+<input type="email" name="email" id=""><br><br>
+<label for="interest">What are you looking to build? <span class="red-star">*</span></label><br><br>
+<select name="default" id="cars">
+  <option value="Choose">--Choose one--</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select><br><br>
+<label for="platform">Platforms you plan to support? <span class="red-star">*</span></label><br>
+<input type="checkbox" id="web" name="platform" value="web">
+<label for="web">Web</label>
+<input type="checkbox" id="mobile" name="platform" value="mobile">
+<label for="mobile">Mobile</label>
+<input type="checkbox" id="desktop" name="platform" value="desktop">
+<label for="desktop">Desktop</label><br><br>
+
+<label for="message">Message</label>
+<textarea name="message" id="" cols="30" rows="10"></textarea>
+<input type="reset" name="reset"  value="Reset">
+<button>Send Message</button>
+
     <footer>
         <hr>
         &copy; Solutions.com
